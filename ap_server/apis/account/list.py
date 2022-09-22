@@ -1,0 +1,1 @@
+[('page_number', {'table_id': {'upper_left': '99,82', 'upper_right': '99,857', 'lower_right': '2356,857', 'lower_left': '2356,82', 'cells': [{'name': 'cell_id1', 'upper_left': '99,82', 'upper_right': '99,857', 'lower_right': '2356,857', 'lower_left': '2356,82', 'start_row': 0, 'end_row': 2, 'start_col': 0, 'end_col': 3, 'content': 'example'}]}})]
