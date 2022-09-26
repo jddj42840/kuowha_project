@@ -2,7 +2,7 @@
 from base_api.custom_cls import CustomMethodView, CustomRequestParser, CustomResource   # 在當前資料夾(base_api)導入類別
 from flask import Blueprint, Flask, request, session
 from utils.orcl_utils import OracleAccess   # 目前了解是跟 Oracle 有關
-
+from flask_mail import Mail, Message
 from base_api.custom_cls import Api     # 當前目錄底下的custom_cls 導入 Api 類
 from apis.account.api import api as account_ns  # 從 account 目錄底下的 api.py 裡面導入 api 物件 <<api = Namespace(...)>> 的那句 並設為 account_ns
 # from flask_mail import Mail, Message    # flask mail 
@@ -22,6 +22,7 @@ app.config['JSON_AS_ASCII'] = False
 
 # mail
 app.config.from_object(mail_consts)
+mail = Mail(app) 
 # app.config['MAIL_SERVER']='smtp.gmail.com'
 # app.config['MAIL_PORT'] = 465
 # app.config['MAIL_USERNAME'] = 'forgetbot42840@gmail.com'
